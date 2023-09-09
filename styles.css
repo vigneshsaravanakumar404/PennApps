@@ -8,10 +8,157 @@ body {
 
 * {
     margin: 0;
-    background-color: rgb(5, 5, 35);
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    background-color: transparent;
+}
+
+.navbar {
+    margin-top: 5px;
+    position: fixed;
+}
+
+#navicon {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 40px;
+    background-color: white;
+}
+
+#navtitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 90px;
+    position: relative;
+    bottom: 35px;
+}
+
+#navlinks {
+    margin-left: calc(100vw - 1010px);
+    position: relative;
+    bottom: 75px;
+}
+
+.navlink {
+    margin-left: 00px;
+    height: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px 25px 20px 50px;
+    width: fit-content;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    background-color: rgba(100, 240, 120, 0.1);
+    transition: background-color 0.25s;
+    display: inline-block;
+    line-height: 0px;
+}
+
+.navlink:hover {
+    background-color: rgba(100, 240, 120, 0.3);
+    cursor: pointer;
+}
+
+.navlinkicon {
+    height: 20px;
+    width: fit-content;
+    position: relative;
+    top: 4px;
+}
+
+#accounticon {
+    right: 120px;
+}
+
+#blogicon {
+    right: 90px;
+}
+
+#budgetingicon {
+    right: 140px;
+}
+
+#courseicon {
+    right: 115px;
+}
+
+#dashboardicon {
+    right: 143px;
+}
+
+#selectoricon {
+    right: 130px;
 }
 
 h1 {
     color: white;
-    font-family: 'Roboto Mono', monospace;
 }
+
+#tabnavicon {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 40px;
+    background-color: white;
+}
+
+#tabnavtitletext {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navlinkiconbody {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgba(100, 240, 120, 0.1);
+    transition: background-color 0.25s;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.navlinkiconbody:hover {
+    background-color: rgba(100, 240, 120, 0.3);
+    cursor: pointer;
+}
+
+#firstnavicon {
+    margin-left: 0px;
+}
+
+.tabnavlinkicon {
+    height: 20px;
+    width: fit-content;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+#tabaccounticon {
+    left: 12px;
+}
+
+#tabblogicon {
+    left: 11.5px;
+}
+
+#tabcourseicon { 
+    top: 11.5px;
+}
+
+#tabselectoricon {
+    left: 11.5px;
+}
+
+#tabnavlinks {
+    margin-left: calc(50vw - 150px);
+    position: relative;
+    bottom: 25px;
+}
+
+#tabnavheader {
+    margin-left: calc(50vw - 155px);
+}
+
