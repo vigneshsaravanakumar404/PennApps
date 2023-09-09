@@ -1,3 +1,8 @@
 from taipy import Gui
+from taipy.gui import Html
 
-Gui(page="# Getting started with *Taipy*").run(dark_mode=False)
+html = Html("""
+    
+""")
+
+Gui(page=html, css_file='./styles.css').run(dark_mode=False)
