@@ -94,7 +94,38 @@ pages = {
 
     """),
     'signup': Html("""
-
+        <div id="signupbody">
+            <h2 id="logintitle">Sign Up</h2>
+            <form action="/action_page.php" style="margin-top: 15px">
+                <img class="loginicon" src="./icons/account.png"></img>
+                <input class="logininput" type="text" name="firstname" placeholder="First Name"></input><br></br><br></br>
+                <img class="loginicon" src="./icons/account.png"></img>
+                <input class="logininput" type="text" name="lastname" placeholder="Last Name"></input><br></br><br></br>
+                <img class="loginicon" src="./icons/location.png"></img>
+                <input class="logininput" type="text" name="streetname" placeholder="Street Name"></input><br></br><br></br>
+                <img class="loginicon" src="./icons/location.png"></img>
+                <input class="logininput" type="number" name="streetnumber" placeholder="Street Number"></input><br></br><br></br>
+                <img class="loginicon" src="./icons/location.png"></img>
+                <input class="logininput" type="text" name="city" placeholder="City"></input><br></br><br></br>
+                <img class="loginicon" src="./icons/location.png"></img>
+                <input class="logininput" type="text" name="state" placeholder="State"></input><br></br><br></br>
+                <img class="loginicon" src="./icons/location.png"></img>
+                <input class="logininput" type="number" name="zipcode" placeholder="Zip Code"></input><br></br><br></br>
+                <img class="loginicon" src="./icons/email.png"></img>
+                <input class="logininput" type="text" name="email" placeholder="Email"></input><br></br><br></br>
+                <img class="loginicon" src="./icons/password.png"></img>
+                <input class="logininput" type="password" name="password" placeholder="Password"></input><br></br><br></br>
+                <img class="loginicon" src="./icons/password.png"></img>
+                <input class="logininput" type="password" name="password" placeholder="Confirm Password"></input><br></br><br></br>
+                <img class="loginicon" src="./icons/phone.png"></img>
+                <input class="logininput" type="number" name="phonenumber" placeholder="Phone Number"></input><br></br><br></br>
+                <p id="loginsubmit">Get OTP</p>
+                <img class="loginicon" src="./icons/password.png"></img>
+                <input class="logininput" type="text" name="otp" placeholder="OTP"></input><br></br><br></br>
+                <input id="loginsubmit" type="submit" value="Submit"></input>
+            </form>
+        </div>
+        <div style="height: 200px;"></div>
     """),
     'login': Html("""
         <div id="loginbody">
@@ -107,6 +138,7 @@ pages = {
                 <input id="loginsubmit" type="submit" value="Submit"></input>
             </form>
         </div>
+        <div style="height: 200px;"></div>
     """),
     'account': Html("""
 
