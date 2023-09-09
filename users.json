@@ -1,0 +1,16 @@
+[
+    {
+        "first_name": "Tejas",
+        "last_name": "Raghuram",
+        "phone_number": "7328237778",
+        "email": "tejas.raghuram@rutgers.edu",
+        "password": "$2b$12$JOYktnt3MoqKpDSLsd845.7yWm.dpWeT3hnJXNnNRwl5XGdto4t1S",
+        "location": {
+            "street_number": "16",
+            "street_name": "Fox Hill Run",
+            "city": "Basking",
+            "state": "NJ",
+            "zip_code": "08876"
+        }
+    }
+]

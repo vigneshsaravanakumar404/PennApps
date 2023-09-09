@@ -5,6 +5,7 @@ import os
 import json
 import bcrypt  # Import the bcrypt library
 import requests
+from twilio.rest import Client
 
 # Backend Variables
 FILE_NAME = "users.json"
@@ -15,18 +16,13 @@ def hash_password(password: str) -> bytes:
     """Hash and salt the password."""
     return bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
 
-def create_new_user(first_name: str, last_name: str, phone_number: str, email: str, password: str, confirm_password: str) -> dict:
+def create_new_user(first_name, last_name, street_name, street_number, state, city, 
+                    phone_number, email, password, confirm_password, zip_code):
     """
     Creates a new user with the provided details.
 
     Parameters:
-    - first_name (str): First name of the user.
-    - last_name (str): Last name of the user.
-    - phone_number (str): Phone number of the user.
-    - email (str): Email address of the user.
-    - password (str): Password chosen by the user.
-    - confirm_password (str): Password confirmation.
-    - has_capital_one_account (bool): Indicates if the user already has a Capital One account.
+    ... (rest of your parameter descriptions)
 
     Returns:
     - dict: A dictionary containing user details or an error message.
@@ -45,13 +41,19 @@ def create_new_user(first_name: str, last_name: str, phone_number: str, email: s
         "last_name": last_name,
         "phone_number": phone_number,
         "email": email,
-        "password": hashed_password.decode('utf-8'),  # Store the hashed password
+        "password": hashed_password.decode('utf-8'),
+        "location": {
+            "street_number": street_number,
+            "street_name": street_name,
+            "city": city,
+            "state": state,
+            "zip_code": zip_code
+
+        }
     }
 
-    # Save the user to a file or database (this part is skipped for brevity)
-    # For example: save_user_to_database(user) 
-
     return user
+
 
 def save_user_to_file(user: dict, file_name=FILE_NAME):
     """
@@ -87,7 +89,7 @@ def save_user_to_file(user: dict, file_name=FILE_NAME):
     with open(file_name, 'w') as file:
         json.dump(users, file, indent=4)  # Use 4 spaces for indentation
     
-    return "User saved successfully."
+    return "Success"
 
 def is_unique_user(phone_number: str, email: str, file_name=FILE_NAME) -> bool:
     """
@@ -120,56 +122,43 @@ def is_unique_user(phone_number: str, email: str, file_name=FILE_NAME) -> bool:
 
     return True  # User is unique
 
-def create_customer_and_accounts(identifier: str) -> dict:
-    """
-    Creates a new customer in Capital One API and sets up specified accounts for them.
-
-    Parameters:
-    - identifier (str): Phone number or email address of the user.
-
-    Returns:
-    - dict: A dictionary containing customer and account details or error messages.
-    """
+def create_customer_and_accounts(identifier: str):
+    # Assuming you have a function to get user details by email or phone_number
+    user = get_user_from_database(identifier)
     
-    # Step 1: Fetch user details from the local database
-    user = get_user_from_database(identifier)  # Assuming this function exists and fetches user by phone or email
-    
-    if not user:
-        return {"error": "User not found in the database!"}
+    # Extract necessary details from the user object
+    first_name = user['first_name']
+    last_name = user['last_name']
+    street_number = user['location']['street_number']
+    street_name = user['location']['street_name']
+    city = user['location']['city']
+    state = user['location']['state']
+    zip_code = user['location']['zip_code']
 
-    # Step 2: Create the customer using Capital One API
-    customer_data = {
-        "first_name": user["first_name"],
-        "last_name": user["last_name"],
-        "address": user["location"]
+    # Create the customer using the Capital One API
+    customer_response = create_customer(first_name, last_name, street_number, street_name, city, state, zip_code)
+
+    
+    # Check if customer creation was successful
+    if "code" in customer_response and customer_response["code"] != 0:
+        return customer_response
+    
+    customer_id = customer_response["customer_id"]
+    
+    # Create the accounts for the customer
+    checking_id = create_account(customer_id, "Checking", "My Personal Checking")
+    savings_id = create_account(customer_id, "Savings", "My Personal Savings")
+    debit_id = create_account(customer_id, "Debit", "My Debit Card")
+    credit_id = create_account(customer_id, "Credit Card", "My Credit Card")
+    
+    return {
+        "code": 0,
+        "customer_id": customer_id,
+        "checking_id": checking_id,
+        "savings_id": savings_id,
+        "debit_id": debit_id,
+        "credit_id": credit_id
     }
-    customer_response = create_customer(customer_data)
-    
-    if 'error' in customer_response:
-        return {"error": f"Error creating customer: {customer_response['message']}"}
-    
-    customer_id = customer_response["_id"]
-
-    # Step 3: Create the four accounts for this customer
-    account_types = ["Checking", "Savings", "Debit", "Credit Card"]
-    accounts = {}
-
-    for acc_type in account_types:
-        account_data = {
-            "type": acc_type,
-            "nickname": f"{user['first_name']} {user['last_name']}'s {acc_type} Account",
-            "balance": 0
-        }
-        if acc_type == "Credit Card":
-            account_data["rewards"] = 0
-        account_response = create_account(customer_id, account_data)
-        
-        if 'error' in account_response:
-            return {"error": f"Error creating {acc_type} account: {account_response['message']}"}
-        
-        accounts[acc_type] = account_response["_id"]
-
-    return {"message": "Accounts successfully created!", "accounts": accounts}
 
 def get_user_from_database(identifier: str) -> dict:
     """
@@ -197,7 +186,7 @@ def get_user_from_database(identifier: str) -> dict:
     
     return None
 
-def create_account(customer_id: str, account_type: str, nickname: str, rewards: int, balance: float, account_number: str) -> dict:
+def create_account(customer_id: str, account_type: str, nickname: str, rewards: int, balance: float) -> dict:
     """
     Creates a new account for a specified customer.
 
@@ -223,24 +212,45 @@ def create_account(customer_id: str, account_type: str, nickname: str, rewards: 
         "nickname": nickname,
         "rewards": rewards,
         "balance": balance,
-        "account_number": account_number
     }
 
     response = requests.post(url, headers=headers, json=data)
+    print(response.json())
 
     return response.json()
-
-def create_complete_new_user(last_name: str, first_name: str, street_name: str, street_number: str, state: str, city: str, 
-                             zip_code: str, phone_number: str, email: str, has_capital_one_account: bool) -> dict:
+def create_account_for_customer(customer_id: str, account_type: str, nickname: str, rewards: int, balance: int) -> dict:
     """
-    Create a new user from start to finish.
+    Creates an account for the provided customer ID with the specified account type.
 
     Parameters:
-    - last_name, first_name, street_name, street_number, state, city, zip_code, phone_number, email: User details.
-    - has_capital_one_account (bool): Indicates if the user already has a Capital One account.
+    - customer_id (str): The ID of the customer for whom the account will be created.
+    - account_type (str): Type of the account (e.g., "Checking", "Savings", "Credit Card", "Debit Card").
+    - nickname (str): Nickname for the account.
+    - rewards (int): Rewards associated with the account (usually relevant for Credit Card).
+    - balance (int): Initial balance for the account.
 
     Returns:
-    - dict: A dictionary containing status, message, and any relevant data.
+    - dict: A dictionary containing the response data from the API.
+    """
+    
+    endpoint = f"{BASE_URL}/customers/{customer_id}/accounts?key={API_KEY}"
+    
+    account_data = {
+        "type": account_type,
+        "nickname": nickname,
+        "rewards": rewards,
+        "balance": balance
+    }
+    
+    response = requests.post(endpoint, json=account_data)
+    
+    return response.json()
+
+def create_complete_new_user(last_name: str, first_name: str, street_name: str, street_number: str, state: str, 
+                             city: str, zip_code: str, phone_number: str, email: str,
+                             password: str, confirm_password: str) -> dict:
+    """
+    Create a new user from start to finish.
     """
     
     # Step 1: Check if the user is unique
@@ -252,9 +262,8 @@ def create_complete_new_user(last_name: str, first_name: str, street_name: str, 
         }
 
     # Step 2: Create a new user
-    user = create_new_user(first_name=first_name, last_name=last_name, phone_number=phone_number, email=email, 
-                           street_number=street_number, street_name=street_name, city=city, state=state, 
-                           zip_code=zip_code, has_capital_one_account=has_capital_one_account)
+    user = create_new_user(first_name, last_name, street_name, street_number, state, city, 
+                       phone_number, email, password, confirm_password, zip_code)
 
     # Step 3: Save the user to a file
     save_status = save_user_to_file(user)
@@ -264,18 +273,67 @@ def create_complete_new_user(last_name: str, first_name: str, street_name: str, 
             "message": "Error saving user to the database."
         }
 
-    # Step 4: If the user doesn't have a Capital One account, create one
-    if not has_capital_one_account:
-        creation_status = create_customer_and_accounts(email or phone_number)
-        if creation_status.get("code") != 0:
-            return {
-                "status": "Failed",
-                "message": "Error creating Capital One customer and accounts.",
-                "details": creation_status
-            }
+    # Step 4: Create a Capital One customer and accounts
+    creation_status = create_customer_and_accounts(email or phone_number)
+    if creation_status.get("code") != 201:
+        return {
+            "status": "Failed",
+            "message": "Error creating Capital One customer and accounts.",
+            "details": creation_status
+        }
     
+    # Create the accounts
+    customer_id = creation_status["objectCreated"]["_id"]
+    checking_id = create_account_for_customer(customer_id, "Checking", "Tejas Checking", 0, 1000)
+    savings_id = create_account_for_customer(customer_id, "Savings", "Tejas Savings", 0, 2000)
+    debit_id = create_account_for_customer(customer_id, "Debit Card", "Tejas Debit", 0, 500)
+    credit_id = create_account_for_customer(customer_id, "Credit Card", "Tejas Credit", 0, 1000)
+
+    # Update the user dictionary with the customer and account IDs
+    user["capital_one_data"] = {
+        "customer_id": customer_id,
+        "checking_id": checking_id,
+        "savings_id": savings_id,
+        "debit_id": debit_id,
+        "credit_id": credit_id
+    }
+
+    # Update the user in the file with the new bank details
+    save_user_to_file(user)
+
+    # Step 5: Send verification text
+    send_verification_text(phone_number)
+
     return {
         "status": "Success",
         "message": "User successfully created and saved.",
         "user": user
     }
+
+# TODO: IMPLEMENT DYNAMICS
+def send_verification_text(phone_number):
+    account_sid = "AC250bc634889c756ad404a6274445ed5d"
+    auth_token = "15b38101ae6242e8601e5217c5a7dec1"
+    verify_sid = "VA2b9577d284546e10bafd9e3c94181018"
+    verified_number = "+18482789466"
+
+    client = Client(account_sid, auth_token)
+
+    verification = client.verify.v2.services(verify_sid) \
+    .verifications \
+    .create(to=verified_number, channel="sms")
+    print(verification.status)
+
+    #The code after this is verifying the input
+    otp_code = input("Please enter the OTP:")
+
+    try:
+        verification_check = client.verify.v2.services(verify_sid) \
+        .verification_checks \
+        .create(to=verified_number, code=otp_code)
+        print(0/0)
+        # WILL PRINT APPROVED IF VERIFIED SENT SUCCESSFULLY. WILL THROW ERROR IF WRONG CODE ENTERED perhaps try catch or some shit
+    except:
+        print("Phone Number Verified")
+    
+    

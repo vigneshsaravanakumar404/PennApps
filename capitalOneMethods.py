@@ -31,7 +31,7 @@ def get_customer_accounts(customer_id: str) -> list:
         return []
 
 def create_account_for_customer(customer_id: str, account_type: str, nickname: str, 
-                                rewards: int = 0, balance: int = 0, account_number: str = "") -> dict:
+                                rewards: int = 0, balance: int = 0) -> dict:
     """
     Creates an account for the customer with the provided ID.
     
@@ -56,7 +56,6 @@ def create_account_for_customer(customer_id: str, account_type: str, nickname: s
         "nickname": nickname,
         "rewards": rewards,
         "balance": balance,
-        "account_number": account_number
     }
     
     response = requests.post(endpoint, headers=headers, json=body)
