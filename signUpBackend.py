@@ -41,27 +41,32 @@ def save_user(user, password, passwordConfirmation):
     
     # Save the updated users list back to the file
     with open(FILE_NAME, 'w') as file:
-        json.dump(users, file)
+        json.dump(users, file, indent=4)  # Use 4 spaces for indentation
     return "User saved successfully"
+
 
 def get_users():
     """Retrieve all users from the file."""
     if os.path.exists(FILE_NAME):
         with open(FILE_NAME, 'r') as file:
-            return json.load(file)
+            file_content = file.read()
+            if not file_content:  # Check if file is empty
+                return []
+            try:
+                return json.loads(file_content)
+            except json.JSONDecodeError:
+                return []  # Return an empty list if the file contains invalid JSON data
     return []
 
 
-
-
 # Example Code
-first_name = "Vignesh"
-last_name = "Saravanakumar"
-edu_email = "vignesh.saravanakumar@rutgers.edu"
+first_name = "Aryan"
+last_name = "Kashyap"
+edu_email = "aryan.kashyup@rutgers.edu"
 college = "Rutgers University"
 password = "secure_password"
 passwordConfirmation = "secure_password"
-phoneNumber = "8482789466"
+phoneNumber = "6092163128"
 
 # Check if passwords match and hash the password
 if password == passwordConfirmation:
@@ -76,7 +81,8 @@ new_user = {
     "phone_number": phoneNumber,
     "email": edu_email,
     "password": hashed_password.decode('utf-8'),  # Store the hashed password
-    "college": password
+    "college": college,
+    "user_data": {}  # Empty JSON object for user-specific data
 }
 
 # Save the user and print the result
