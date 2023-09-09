@@ -4,10 +4,3 @@ from signIn import check_password, authenticate_user
 from landingPageBackend import HEADING, SUB_HEADING
 import os
 import json
-
-
-
-
-
-
-
