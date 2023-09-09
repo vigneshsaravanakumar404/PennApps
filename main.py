@@ -50,12 +50,34 @@ tab_nav= Html("""
         </div>
     </div>
 """)
+              
+computer_landing = Html("""
+    <h1 id="landingheader">The All in One College Finance Personal Assistant</h1>
+    <div id="accountlinks">      
+        <p id="loginnav" class="navlink">Log In</p>
+        <img class="navlinkicon" src="./icons/login.png" id="loginicon"></img>
+        <p id="signupnav" class="navlink">Sign Up</p>
+        <img class="navlinkicon" src="./icons/signup.png" id="signupicon"></img>
+    </div>
+    <div id="landingimage"></div>
+""")
+                        
+tab_landing = Html("""
+    <div style="position:relative; right: 20px;">
+    <h1 id="tablandingheader">The All in One College Finance Personal Assistant</h1>
+    <div id="tabaccountlinks">      
+        <p id="loginnav" class="navlink">Log In</p>
+        <img class="navlinkicon" src="./icons/login.png" id="loginicon"></img>
+        <p id="signupnav" class="navlink">Sign Up</p>
+        <img class="navlinkicon" src="./icons/signup.png" id="signupicon"></img>
+    </div>
+    <div id="tablandingimage"></div>
+    </div>
+""")
 
 pages = {
     '/': computer_nav,
-    'landing': Html("""
-
-    """),
+    'landing': computer_landing,
     'dashboard': Html("""
     
     """),
@@ -75,11 +97,22 @@ pages = {
 
     """),
     'login': Html("""
-
+        <div id="loginbody">
+            <h2 id="logintitle">Log In</h2>
+            <form action="/action_page.php" style="margin-top: 15px">
+                <img class="loginicon" src="./icons/email.png"></img>
+                <input class="logininput" type="text" name="email" placeholder="Email"></input><br></br><br></br>
+                <img class="loginicon" src="./icons/password.png"></img>
+                <input class="logininput" type="password" name="password" placeholder="Password"></input><br></br><br></br>
+                <input id="loginsubmit" type="submit" value="Submit"></input>
+            </form>
+        </div>
     """),
     'account': Html("""
 
     """)
 }
 
-Gui(pages=pages, css_file='./styles.css').run(dark_mode=False)
+Gui(pages=pages, css_file='./styles.css').run(dark_mode=True)
+
+# first name, last name, street name, street number, password, confirm password, state, city, zip code, phone number, email
