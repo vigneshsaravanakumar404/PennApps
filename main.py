@@ -152,20 +152,116 @@ pages = {
         </div>
         <div style="height: 50;"></div>
     """),
+    'dasnboard': Html("""
+        <h1 id="dashboardtitle">Welcome, Tejas!</h1>
+        <h2 id="dashboardprogresstitle">Progress: N/A</h2>
+        <div class="progressbar">
+        </div>
+        <h2 id="dashboardprogresstitle">Rent Budgeting: N/A</h2>
+        <div class="progressbar">
+        </div>
+        <h2 id="dashboardprogresstitle">Food Budgeting: N/A</h2>
+        <div class="progressbar">
+        </div>
+        <h2 id="dashboardprogresstitle">Miscellaneous Expenses: N/A</h2>
+        <div class="progressbar">
+        </div>
+        <h2 id="dashboardprogresstitle">Loan Payment Goal: N/A</h2>
+        <div class="progressbar">
+        </div>
+        <div id="loginbody" style="margin-top: 50px; height: 700px">
+            <h2 id="logintitle" style="margin-top: 25px;">Modify Budgeting</h2>
+            <form style="margin-top: 15px">
+                <img class="loginicon" src="./icons/dollar.png"></img>
+                <input class="logininput" type="text" name="email" placeholder="Total Loan"></input><br></br><br></br>
+                      
+                <img class="loginicon" src="./icons/dollar.png"></img>
+                <input class="logininput" type="text" name="a" placeholder="Loan Paid"></input><br></br><br></br>
+                      
+                <img class="loginicon" src="./icons/dollar.png"></img>
+                <input class="logininput" type="text" name="a" placeholder="Rent Budget"></input><br></br><br></br>
+                      
+                <img class="loginicon" src="./icons/dollar.png"></img>
+                <input class="logininput" type="text" name="a" placeholder="Rent Paid"></input><br></br><br></br>
+                
+                <img class="loginicon" src="./icons/dollar.png"></img>
+                <input class="logininput" type="text" name="a" placeholder="Food Budget"></input><br></br><br></br>
+                    
+                <img class="loginicon" src="./icons/dollar.png"></img>
+                <input class="logininput" type="text" name="a" placeholder="Food Paid"></input><br></br><br></br>
+                      
+                <img class="loginicon" src="./icons/dollar.png"></img>
+                <input class="logininput" type="text" name="a" placeholder="Miscellaneous Budget"></input><br></br><br></br>
+                
+                <img class="loginicon" src="./icons/dollar.png"></img>
+                <input class="logininput" type="text" name="a" placeholder="Miscellaneous Paid"></input><br></br><br></br>
+                      
+                <img class="loginicon" src="./icons/dollar.png"></img>
+                <input class="logininput" type="text" name="a" placeholder="Loan Monthly Goal"></input><br></br><br></br>
+                      
+                <img class="loginicon" src="./icons/dollar.png"></img>
+                <input class="logininput" type="text" name="a" placeholder="Loan Monthly Paid"></input><br></br><br></br>
+                      
+                <p id="loginsubmit">
+                    <a id="dashboardnav" class="navlink" href="/dashboard" style="position: fixed; top: 10px; left: 10px;">Submit</a>  
+                </p>
+                
+            </form>
+        </div>
+        <div style="height: 50;"></div>
+    """),
     'quiz': Html("""
-
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSebj0xhzHsSjnTNL6PxUNreE5NwXmM4_jWbaiXKO-5mrOmCww/viewform?embedded=true" width="640" height="2388" frameborder="0" marginheight="0" marginwidth="0" style = "margin-left: 23vw; margin-top: 150px;">Loading…</iframe>
     """),
     'course': Html("""
-        <div id="bloglinks">
-            <h1 style="text-align: center">College Finance Course</h1>
-            <h5 class="coursesubtitle">This is a Subtitle</h5>
-            <a class="bloglink" href="https://docs.google.com/document/d/18Zeyh6zOmSa6WwuFdGvN1dmjN_5Oj68iYXyRXn98RZ0/edit#heading=h.tgpfmijzask">This is a lesson/quiz</a>
-            <h5 class="coursesubtitle">This is a Subtitle</h5>
-            <a class="bloglink" href="https://docs.google.com/document/d/18Zeyh6zOmSa6WwuFdGvN1dmjN_5Oj68iYXyRXn98RZ0/edit#heading=h.tgpfmijzask">This is a lesson/quiz</a>
-            <h5 class="coursesubtitle">This is a Subtitle</h5>
-            <a class="bloglink" href="https://docs.google.com/document/d/18Zeyh6zOmSa6WwuFdGvN1dmjN_5Oj68iYXyRXn98RZ0/edit#heading=h.tgpfmijzask">This is a lesson/quiz</a>    
-        </div>
-        <iframe src="https://docs.google.com/document/d/e/2PACX-1vSKXvbB4EvHT3IMbL0hnLKyZ6miusLs9CwsKHvl2KQMek9HKdyXZ8vF14H27jqrxKSywTnAtTi73ORv/pub?embedded=true%22%3E</iframe>
+        <h2 style = "margin-left: 25vw; margin-top: 150px;">Lesson 1: Funding Strategies</h2>
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vTFlNEuloGoT21ey_h0M5TriNYtXjrf_HMp1HUqeXILm-BcxLY7WU1QjKlOQM2WUeNrxjYkDi9pkOrv/pub?embedded=true" style="height: 400px; width: 50vw; margin-left: 25vw; margin-bottom: 100px;"></iframe>
+
+        <h2 style = "margin-left: 25vw;">Lesson 2: Irregular Family Situation</h2>
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vT5PGN062vpaQbHiNu18FNH3Vy9q4kYAKXWjzwNtV7lsgalgTlr42HTHheKlqqdOjwz_ypQvWYPCGIs/pub?embedded=true" style="height: 400px; width: 50vw; margin-left: 25vw; margin-bottom: 100px;"></iframe>
+
+        <h2 style = "margin-left: 25vw;">Lesson 3: Need Based Aid</h2>
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vR5hygFdcwjsX0Y4i2deezgC4Lp-2JPWF5TISvk_73Wn5QuDqReIRo1-R-jyw4X01IYu4dl2DJwJIS-/pub?embedded=true" style="height: 400px; width: 50vw; margin-left: 25vw; margin-bottom: 100px;"></iframe>
+
+        <h2 style = "margin-left: 25vw;">Lesson 4: In-State vs Out-of-State</h2>
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vS67PmNWjK-84zRSlcAgvGofNaoiK3gQyVxVN2eYizfpH2heP5UUHhwDI57DMEI_Qm6KEuNwN8VR2vi/pub?embedded=true" style="height: 400px; width: 50vw; margin-left: 25vw; margin-bottom: 100px;"></iframe>
+
+        <h2 style = "margin-left: 25vw;">Lesson 5: Considerations</h2>
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vR28NF5swtyPZqEqJ_96z9dI5B3aL7UvzpkssDs3ILXZtwjS6IHRdEco69tjetI52UHJB9wVLxzSwH6/pub?embedded=true" style="height: 400px; width: 50vw; margin-left: 25vw; margin-bottom: 100px;"></iframe>
+
+        <h2 style = "margin-left: 25vw;">Lesson 6: Considerations for Parents</h2>
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vTcc1nErKBhTulPM-ZkGRaUiqgdIcTGTsmVx3PxpfyAlK20tTWvOraje50Z1kbuGwR1uqR6eN11YNwj/pub?embedded=true" style="height: 400px; width: 50vw; margin-left: 25vw; mmargin-bottom: 100px;"></iframe>
+
+        <h2 style = "margin-left: 25vw;">Lesson 7: Paying for College</h2>
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vQs5ql01ze7ZkKLrVA3OYzLuxMgjxmgPdOOzX9pbeaAfYYRY9L6CA4khTDgIeNY_nCObsNKCzFnru3v/pub?embedded=true" style="height: 400px; width: 50vw; margin-left: 25vw; margin-bottom: 100px;"></iframe>
+        
+        <h2 style = "margin-left: 25vw;">Lesson 8: Finnancial Aid as an Immigrant</h2>          
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vQOSs6A-kUWQhhgA-Xok-4UpotVr0xtHv5PXlsTI85g8Z_3o2iCJLDNpdgs6SwZRV2WudeunKxtd1x_/pub?embedded=true" style="height: 400px; width: 50vw; margin-left: 25vw; margin-bottom: 100px;"></iframe>
+
+        <h2 style = "margin-left: 25vw;">Lesson 9: FAFSA Setup</h2>
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vQPrYwzOSQTtMinZnCx3OeWPA3Klr_OLwRc9UZrJgG55EA1DGswKvql4z-AV3hESOT4LhbLCDpWjl9d/pub?embedded=true" style="height: 400px; width: 50vw; margin-left: 25vw; margin-bottom: 100px;"></iframe>
+
+        <h2 style = "margin-left: 25vw;">Lesson 10: FAFSA and CSS Profile</h2>
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vRvz-XeE2mFzbKWtIS9nGUKhLpV4lv5GsK8L7ymFN-xEoCe5Xm54PRo_QjmnFh9BnzHoGFSCwW6IK60/pub?embedded=true" style="height: 400px; width: 50vw; margin-left: 25vw; margin-bottom: 100px;"></iframe>
+        
+
+        <h2 style = "margin-left: 25vw;">Lesson 11: Athletic Scholorships</h2>
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vQQFV5wUigZ_8x9zSOXx2uWIKfsviMCMWgcglXZzL9WJWaUZPZi_82XNcr5cmU-r0zzZIfp9Y287Yzg/pub?embedded=true" style="height: 400px; width: 50vw; margin-left: 25vw; margin-bottom: 100px;"></iframe>
+
+        <h2 style = "margin-left: 25vw;">Lesson 12: Grants and Scholorships</h2>
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vRGZa_85uW-9RDvkawjXUoV6BE5qNWgpn0J_KP2JasCxpefXaYjF2V--5rzNv-mbTh4SCBmwIoeYqpT/pub?embedded=true" style="height: 400px; width: 50vw; margin-left: 25vw; margin-bottom: 100px;"></iframe>
+
+        <h2 style = "margin-left: 25vw;">Lesson 13: Searching for Scholorships</h2>
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vS969XJI9AGI1FkNa6zxRzeqQb_d0mOIDdIkQPN5dkOl_6mWBVGbz_Z9lbcUKM7aIbK23-MfEvG02PI/pub?embedded=true" style="height: 400px; width: 50vw; margin-left: 25vw; margin-bottom: 100px;"></iframe>
+
+        <h2 style = "margin-left: 25vw;">Lesson 14: Applying for Scholarships Part 1</h2>
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vTZobbU0bPFcXXG7ox3x7gbb_7bzNjU55x-znWCQY90T55ecUrNsZ4F3okKDKPkLHVB68rQWyfzK8jw/pub?embedded=true" style="height: 400px; width: 50vw; margin-left: 25vw; margin-bottom: 100px;"></iframe>
+
+        <h2 style = "margin-left: 25vw;">Lesson 15: Applying for Scholarships Part 2</h2>
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vTZ7F1aYi_2aCHwBBDuXasWnw2g97sJlN49GIKP4z6U3fe9pq1CgCWE2zkZmZqnyUU0PHpN4Pl2KhmA/pub?embedded=true" style="height: 400px; width: 50vw; margin-left: 25vw; margin-bottom: 100px;"></iframe>
+
+        <h2 style = "margin-left: 25vw;">Lesson 16: Applying for Scholarships Part 3</h2>
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vSVWPZ7RChdq8o0JTEV42jZ4O_0QpklkdFGgI2RDUzWF0VJPWbRbo-j_-0IAjwWKcoC4Vyh3sP740g2/pub?embedded=true" style="height: 400px; width: 50vw; margin-left: 25vw; margin-bottom: 100px;"></iframe>
     """),
     'blog': Html("""
         <div id="bloglinks">
@@ -234,7 +330,7 @@ pages = {
                 <img class="loginicon" src="./icons/password.png"></img>
                 <input class="logininput" type="text" name="otp" placeholder="OTP"></input><br></br><br></br>
                 <p id="loginsubmit">
-                    <a id="dashboardnav" class="navlink" href="/dashboard" style="position: fixed; top: 10px; left: 10px;">Submit</a>  
+                    <a id="dashboardnav" class="navlink" href="/dasnboard" style="position: fixed; top: 10px; left: 10px;">Submit</a>  
                 </p>
             </form>
         </div>
@@ -259,21 +355,44 @@ pages = {
         <div style="height: 200px;"></div>
     """),
     'account': Html("""
+        <div id="accountbody">
+            <h2 id="logintitle" style="margin-top: 50px">Account Information</h2>
+            <form action="/action_page.php" style="margin-top: 15px">
 
+                <img class="loginicon" src="./icons/account.png"></img>
+                <p style="font-size: 16px; display: inline; padding: 10px;">   Tejas</p><br></br><br></br>
+
+                <img class="loginicon" src="./icons/account.png"></img>
+                <p style="font-size: 16px; display: inline; padding: 10px;">   Raghuram</p><br></br><br></br>
+
+                <img class="loginicon" src="./icons/location.png"></img>
+                <p style="font-size: 16px; display: inline; padding: 10px;">   Foxhill Run</p><br></br><br></br>
+
+                <img class="loginicon" src="./icons/location.png"></img>
+                <p style="font-size: 16px; display: inline; padding: 10px;">   16</p><br></br><br></br>
+
+                <img class="loginicon" src="./icons/location.png"></img>
+                <p style="font-size: 16px; display: inline; padding: 10px;">   Monmouth Junction</p><br></br><br></br>
+
+                <img class="loginicon" src="./icons/location.png"></img>
+                <p style="font-size: 16px; display: inline; padding: 10px;">   New Jersey</p><br></br><br></br>
+
+                <img class="loginicon" src="./icons/location.png"></img>
+                <p style="font-size: 16px; display: inline; padding: 10px;">   08852</p><br></br><br></br>
+
+                <img class="loginicon" src="./icons/email.png"></img>
+                <p style="font-size: 16px; display: inline; padding: 10px;">   tejas.raghuram101@gmail.com</p><br></br><br></br>
+
+
+                <img class="loginicon" src="./icons/phone.png"></img>
+                <p style="font-size: 16px; display: inline; padding: 10px;">   +17328237778</p><br></br><br></br>
+
+
+            </form>
+        </div>
+        <div style="height: 200px;"></div>
     """)
 }
-
-
-page = """
-# Getting started with Taipy GUI
-
-My text: <|{text}|>
-
-<|{text}|input|>
-"""
-
-print(pages['signup'])
-print(page)
 
 def login_action(state):
     print(state.email)

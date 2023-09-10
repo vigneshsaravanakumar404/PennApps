@@ -348,3 +348,13 @@ h1 {
     background-color: rgba(219, 240, 100, 0.5);
 }
 
+#accountbody {
+    width: 340px;
+    height: 625px;
+    margin-left: calc(50vw - 170px);
+    margin-top: 200px;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 2;
+    border-color: green;
+}
