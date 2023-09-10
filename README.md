@@ -36,9 +36,32 @@ BrokeMeNot.us is a web application conceived by visionary high school seniors ea
   - Incorporation of an AI Chatbot to assist students in finding resources.
   - AI-generated personal financial recommendations tailored to individual students' financial situations.
 
+
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+Logo
+![Logo](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/581/627/datas/gallery.jpg)
+
+Home
+![Home Screen](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/581/633/datas/gallery.jpg)
+
+Gallery
+![Gallery](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/581/631/datas/gallery.jpg)
+
+Modifying
+![Modifying](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/581/629/datas/gallery.jpg)
+
+Course
+![Course](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/581/630/datas/gallery.jpg)
+
+Form
+![Form](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/581/632/datas/gallery.jpg)
+
+Info
+![Info](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/581/628/datas/gallery.jpg)
+
+
+
 
 
 ## Tech Stack
