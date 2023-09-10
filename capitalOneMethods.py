@@ -30,37 +30,35 @@ def get_customer_accounts(customer_id: str) -> list:
     else:
         return []
 
-def create_account_for_customer(customer_id: str, account_type: str, nickname: str, 
-                                rewards: int = 0, balance: int = 0) -> dict:
+def create_account(customer_id: str, account_type: str, nickname: str, rewards: int, balance: float) -> dict:
     """
-    Creates an account for the customer with the provided ID.
-    
+    Creates a new account for a specified customer.
+
     Parameters:
-    - customer_id (str): The ID of the customer the account will belong to.
-    - account_type (str): The type of account (e.g., "Credit Card").
-    - nickname (str): The nickname for the account.
-    - rewards (int, optional): The rewards for the account. Defaults to 0.
-    - balance (int, optional): The initial balance for the account. Defaults to 0.
-    - account_number (str, optional): The account number. If not provided, the bank will generate one.
-    
+    - customer_id (str): The ID of the customer for whom the account is being created.
+    - account_type (str): Type of account (e.g., "Credit Card", "Checking").
+    - nickname (str): A nickname for the account.
+    - rewards (int): Rewards points (applicable for certain account types).
+    - balance (float): Initial balance for the account.
+    - account_number (str): The account number for the new account.
+
     Returns:
-    - dict: A dictionary containing the response code, message, and fields (if any).
+    - dict: The response from the Capital One API.
     """
-    
+
     endpoint = f"{BASE_URL}/customers/{customer_id}/accounts?key={API_KEY}"
-    headers = {
-        "Content-Type": "application/json",
-    }
-    body = {
+    
+    account_data = {
         "type": account_type,
         "nickname": nickname,
         "rewards": rewards,
-        "balance": balance,
+        "balance": balance  # Initial balance
     }
     
-    response = requests.post(endpoint, headers=headers, json=body)
-    
-    # Return the response as a dictionary
+    response = requests.post(endpoint, json=account_data)     
+
+    print(response.json())
+
     return response.json()
 
 # Example usage:

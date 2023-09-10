@@ -1,16 +1,504 @@
 [
     {
-        "first_name": "Tejas",
+        "first_name": "Teju",
         "last_name": "Raghuram",
         "phone_number": "7328237778",
         "email": "tejas.raghuram@rutgers.edu",
-        "password": "$2b$12$JOYktnt3MoqKpDSLsd845.7yWm.dpWeT3hnJXNnNRwl5XGdto4t1S",
+        "password": "$2b$12$qKvsg2iQyV8vUkaAIKWctu6SC9cBrqYxnIBsWacUDs3jr9nMk7Ryy",
         "location": {
             "street_number": "16",
             "street_name": "Fox Hill Run",
             "city": "Basking",
             "state": "NJ",
             "zip_code": "08876"
+        },
+        "capital_one_data": {
+            "customer_id": {
+                "first_name": "Teju",
+                "last_name": "Raghuram",
+                "address": {
+                    "street_number": "16",
+                    "street_name": "Fox Hill Run",
+                    "city": "Basking",
+                    "state": "NJ",
+                    "zip": "08876"
+                },
+                "_id": "64fcfb4b9683f20dd51880b0"
+            },
+            "checking_id": {
+                "code": 404,
+                "message": "Invalid ID"
+            },
+            "savings_id": {
+                "code": 404,
+                "message": "Invalid ID"
+            },
+            "debit_id": {
+                "code": 404,
+                "message": "Invalid ID"
+            },
+            "credit_id": {
+                "code": 404,
+                "message": "Invalid ID"
+            }
+        }
+    },
+    {
+        "first_name": "Tejussssss",
+        "last_name": "Raghuram",
+        "phone_number": "73282377788",
+        "email": "tejassss.raghuram@rutgers.edu",
+        "password": "$2b$12$OTqP6xuKYmiOwilsOH46KOtxHE.1LcQzfBa4q3e3F8BmTGepxZ/xi",
+        "location": {
+            "street_number": "16",
+            "street_name": "Fox Hill Run",
+            "city": "Basking",
+            "state": "NJ",
+            "zip_code": "08876"
+        },
+        "capital_one_data": {
+            "customer_id": {
+                "first_name": "Tejussssss",
+                "last_name": "Raghuram",
+                "address": {
+                    "street_number": "16",
+                    "street_name": "Fox Hill Run",
+                    "city": "Basking",
+                    "state": "NJ",
+                    "zip": "08876"
+                },
+                "_id": "64fcfb7a9683f20dd51880b1"
+            },
+            "checking_id": {
+                "code": 404,
+                "message": "Invalid ID"
+            },
+            "savings_id": {
+                "code": 404,
+                "message": "Invalid ID"
+            },
+            "debit_id": {
+                "code": 404,
+                "message": "Invalid ID"
+            },
+            "credit_id": {
+                "code": 404,
+                "message": "Invalid ID"
+            }
+        }
+    },
+    {
+        "first_name": "Tejussssss",
+        "last_name": "Raghuram",
+        "phone_number": "73282377768",
+        "email": "tejassss.6raghuram@rutgers.edu",
+        "password": "$2b$12$bzaZKU.XSlKYDGqcy5Fl8.rs48A3Z5fRahGXPCUq9X6Q9VPRC3zHm",
+        "location": {
+            "street_number": "16",
+            "street_name": "Fox Hill Run",
+            "city": "Basking",
+            "state": "NJ",
+            "zip_code": "08876"
+        },
+        "capital_one_data": {
+            "customer_id": {
+                "first_name": "Tejussssss",
+                "last_name": "Raghuram",
+                "address": {
+                    "street_number": "16",
+                    "street_name": "Fox Hill Run",
+                    "city": "Basking",
+                    "state": "NJ",
+                    "zip": "08876"
+                },
+                "_id": "64fcfbcf9683f20dd51880b2"
+            },
+            "checking_id": {
+                "code": 404,
+                "message": "Invalid ID"
+            },
+            "savings_id": {
+                "code": 404,
+                "message": "Invalid ID"
+            },
+            "debit_id": {
+                "code": 404,
+                "message": "Invalid ID"
+            },
+            "credit_id": {
+                "code": 404,
+                "message": "Invalid ID"
+            }
+        }
+    },
+    {
+        "first_name": "Tejussssss",
+        "last_name": "Raghuram",
+        "phone_number": "73282337768",
+        "email": "tejassss.69raghuram@rutgers.edu",
+        "password": "$2b$12$JWhmEmWp44zTSgA7AdjHeu99L63iQDnixBM8me156Xbqs0dcHeu3.",
+        "location": {
+            "street_number": "16",
+            "street_name": "Fox Hill Run",
+            "city": "Basking",
+            "state": "NJ",
+            "zip_code": "08876"
+        },
+        "capital_one_data": {
+            "customer_id": {
+                "first_name": "Tejussssss",
+                "last_name": "Raghuram",
+                "address": {
+                    "street_number": "16",
+                    "street_name": "Fox Hill Run",
+                    "city": "Basking",
+                    "state": "NJ",
+                    "zip": "08876"
+                },
+                "_id": "64fcfc979683f20dd51880b3"
+            },
+            "checking_id": {
+                "code": 404,
+                "message": "Invalid ID"
+            },
+            "savings_id": {
+                "code": 404,
+                "message": "Invalid ID"
+            },
+            "debit_id": {
+                "code": 404,
+                "message": "Invalid ID"
+            },
+            "credit_id": {
+                "code": 404,
+                "message": "Invalid ID"
+            }
+        }
+    },
+    {
+        "first_name": "Tejussssss",
+        "last_name": "Raghuram",
+        "phone_number": "732982337768",
+        "email": "tejassss.699raghuram@rutgers.edu",
+        "password": "$2b$12$.IadYPFYFT9gZn8i.UsJgu2mvbkvX4iPP4OjC2TocJCJI8OEkhpGS",
+        "location": {
+            "street_number": "16",
+            "street_name": "Fox Hill Run",
+            "city": "Basking",
+            "state": "NJ",
+            "zip_code": "08876"
+        }
+    },
+    {
+        "first_name": "Tejussssss",
+        "last_name": "Raghuram",
+        "phone_number": "7392982337768",
+        "email": "tejassss.6999raghuram@rutgers.edu",
+        "password": "$2b$12$yO3JI4DTZy2sURfrX.PBlO1Ju91wgmGYIO7dYiWutk3F/.UcwBjCa",
+        "location": {
+            "street_number": "16",
+            "street_name": "Fox Hill Run",
+            "city": "Basking",
+            "state": "NJ",
+            "zip_code": "08876"
+        },
+        "capital_one_data": {
+            "customer_id": {
+                "first_name": "Tejussssss",
+                "last_name": "Raghuram",
+                "address": {
+                    "street_number": "16",
+                    "street_name": "Fox Hill Run",
+                    "city": "Basking",
+                    "state": "NJ",
+                    "zip": "08876"
+                },
+                "_id": "64fcfd7e9683f20dd51880b5"
+            },
+            "checking_id": {
+                "code": 404,
+                "message": "Invalid ID"
+            },
+            "savings_id": {
+                "code": 404,
+                "message": "Invalid ID"
+            },
+            "debit_id": {
+                "code": 404,
+                "message": "Invalid ID"
+            },
+            "credit_id": {
+                "code": 404,
+                "message": "Invalid ID"
+            }
+        }
+    },
+    {
+        "first_name": "Tejussssss",
+        "last_name": "Raghuram",
+        "phone_number": "73929823937768",
+        "email": "tejassss.69999raghuram@rutgers.edu",
+        "password": "$2b$12$cfMM8IcjJVwZijt0kkxyCOBM1ie/CM6INahqne/2c6lWfO1yNwnHK",
+        "location": {
+            "street_number": "16",
+            "street_name": "Fox Hill Run",
+            "city": "Basking",
+            "state": "NJ",
+            "zip_code": "08876"
+        },
+        "capital_one_data": {
+            "customer_id": {
+                "first_name": "Tejussssss",
+                "last_name": "Raghuram",
+                "address": {
+                    "street_number": "16",
+                    "street_name": "Fox Hill Run",
+                    "city": "Basking",
+                    "state": "NJ",
+                    "zip": "08876"
+                },
+                "_id": "64fcfe8a9683f20dd51880b6"
+            },
+            "checking_id": {
+                "code": 404,
+                "message": "Invalid ID"
+            },
+            "savings_id": {
+                "code": 404,
+                "message": "Invalid ID"
+            },
+            "debit_id": {
+                "code": 404,
+                "message": "Invalid ID"
+            },
+            "credit_id": {
+                "code": 404,
+                "message": "Invalid ID"
+            }
+        }
+    },
+    {
+        "first_name": "Tejussssss",
+        "last_name": "Raghuram",
+        "phone_number": "739929823937768",
+        "email": "tejassss.699999raghuram@rutgers.edu",
+        "password": "$2b$12$h2htihW1Rtm8E7XmwUy.DeA08uX/QIeUzqmxMpRLY2k0wxg0CAqn2",
+        "location": {
+            "street_number": "16",
+            "street_name": "Fox Hill Run",
+            "city": "Basking",
+            "state": "NJ",
+            "zip_code": "08876"
+        }
+    },
+    {
+        "first_name": "Tejussssss",
+        "last_name": "Raghuram",
+        "phone_number": "7399298293937768",
+        "email": "tejassss.6999999raghuram@rutgers.edu",
+        "password": "$2b$12$ul63CuUmmua9mkItazr7yeIxt5lR8Xoso6fM6/zZrUkhHXmjqYZU6",
+        "location": {
+            "street_number": "16",
+            "street_name": "Fox Hill Run",
+            "city": "Basking",
+            "state": "NJ",
+            "zip_code": "08876"
+        }
+    },
+    {
+        "first_name": "Tejussssss",
+        "last_name": "Raghuram",
+        "phone_number": "73992982973937768",
+        "email": "tejassss.69999997raghuram@rutgers.edu",
+        "password": "$2b$12$pd73VoK9TZX.eloNE46Vreo8Lk3b62L2UgOxiuHkJ.SmByUR.I4qC",
+        "location": {
+            "street_number": "16",
+            "street_name": "Fox Hill Run",
+            "city": "Basking",
+            "state": "NJ",
+            "zip_code": "08876"
+        }
+    },
+    {
+        "first_name": "Esha",
+        "last_name": "Vigneswaran",
+        "phone_number": "000-000-0000",
+        "email": "esha.vigneswaran@mit.edu",
+        "password": "$2b$12$7ThEArsvL/MkgEJ0620a0utiKJAZ6XYUUyln5ZXlMUxIkm7T4ofTS",
+        "location": {
+            "street_number": "0",
+            "street_name": "Her Mom's House",
+            "city": "Dayton",
+            "state": "NJ",
+            "zip_code": "08810"
+        }
+    },
+    {
+        "first_name": "Esha",
+        "last_name": "Vigneswaran",
+        "phone_number": "100-000-0000",
+        "email": "eshaS.vigneswaran@mit.edu",
+        "password": "$2b$12$OF6Sjf7A5PIXBgVgNeu.2u3df.epTPeSFCNuMxL7W87RIuE1ugc0u",
+        "location": {
+            "street_number": "0",
+            "street_name": "Her Mom's House",
+            "city": "Dayton",
+            "state": "NJ",
+            "zip_code": "08810"
+        }
+    },
+    {
+        "first_name": "Esha",
+        "last_name": "Vigneswaran",
+        "phone_number": "120-000-0000",
+        "email": "eshaSS.vigneswaran@mit.edu",
+        "password": "$2b$12$EF5JLBdfO659ih2hJF.KCuHf/UybbpvDl6Fnx.8SXgrfP0KO2wOHG",
+        "location": {
+            "street_number": "0",
+            "street_name": "Her Mom's House",
+            "city": "Dayton",
+            "state": "NJ",
+            "zip_code": "08810"
+        }
+    },
+    {
+        "first_name": "Esha",
+        "last_name": "Vigneswaran",
+        "phone_number": "123-000-0000",
+        "email": "eshaSSS.vigneswaran@mit.edu",
+        "password": "$2b$12$tPt2E1YligagnCeR4mWOBu2FaGuEfftQACG7AdtlJdVgx3HQ5DL56",
+        "location": {
+            "street_number": "0",
+            "street_name": "Her Mom's House",
+            "city": "Dayton",
+            "state": "NJ",
+            "zip_code": "08810"
+        }
+    },
+    {
+        "first_name": "Esha",
+        "last_name": "Vigneswaran",
+        "phone_number": "123-400-0000",
+        "email": "eshaSSSS.vigneswaran@mit.edu",
+        "password": "$2b$12$8PsL95.RxUb/xD1RStnnLOKwX/L0KVKUQoe/tDVls28aJV6cykVjO",
+        "location": {
+            "street_number": "0",
+            "street_name": "Her Mom's House",
+            "city": "Dayton",
+            "state": "NJ",
+            "zip_code": "08810"
+        }
+    },
+    {
+        "first_name": "Esha",
+        "last_name": "Vigneswaran",
+        "phone_number": "123-450-0000",
+        "email": "eshaSSSSS.vigneswaran@mit.edu",
+        "password": "$2b$12$y62Mh3b4Z7M55DvVJ1/mk.nXbTXDAEipqmQFtr7A5CscrEbln5Dsy",
+        "location": {
+            "street_number": "0",
+            "street_name": "Her Mom's House",
+            "city": "Dayton",
+            "state": "NJ",
+            "zip_code": "08810"
+        }
+    },
+    {
+        "first_name": "Esha",
+        "last_name": "Vigneswaran",
+        "phone_number": "123-456-0000",
+        "email": "eshaSSSSSS.vigneswaran@mit.edu",
+        "password": "$2b$12$kcAJ3AnyOIMGG3feP.abf.28F8YXNAwSTjPCQogFYytUdoGzhuPw2",
+        "location": {
+            "street_number": "0",
+            "street_name": "Her Mom's House",
+            "city": "Dayton",
+            "state": "NJ",
+            "zip_code": "08810"
+        }
+    },
+    {
+        "first_name": "Esha",
+        "last_name": "Vigneswaran",
+        "phone_number": "123-456-7000",
+        "email": "eshaSSSSSSS.vigneswaran@mit.edu",
+        "password": "$2b$12$3cVou8qOSLWUHgKw1XGvn.fOj4XIS/Ne4QU73djmt3aOM/NPLcEbW",
+        "location": {
+            "street_number": "0",
+            "street_name": "Her Mom's House",
+            "city": "Dayton",
+            "state": "NJ",
+            "zip_code": "08810"
+        }
+    },
+    {
+        "first_name": "Esha",
+        "last_name": "Vigneswaran",
+        "phone_number": "123-456-7800",
+        "email": "eshaSSSSSSSS.vigneswaran@mit.edu",
+        "password": "$2b$12$hRSY44Pp.W6weOaqvJGeM.Mv47xzB1hKARknUB/RSMrx3/76upMtC",
+        "location": {
+            "street_number": "0",
+            "street_name": "Her Mom's House",
+            "city": "Dayton",
+            "state": "NJ",
+            "zip_code": "08810"
+        }
+    },
+    {
+        "first_name": "Esha",
+        "last_name": "Vigneswaran",
+        "phone_number": "223-456-7800",
+        "email": "eshaSSSSSSSSS.vigneswaran@mit.edu",
+        "password": "$2b$12$mUygpNKJulSaNCFUlaabUuBveeeZ2Gz0aVnOaVIviqdYsNIp1AeqS",
+        "location": {
+            "street_number": "0",
+            "street_name": "Her Mom's House",
+            "city": "Dayton",
+            "state": "NJ",
+            "zip_code": "08810"
+        }
+    },
+    {
+        "first_name": "Esha",
+        "last_name": "VigneswaranS",
+        "phone_number": "233-456-7800",
+        "email": "eshaSSSSSSSSSS.vigneswaran@mit.edu",
+        "password": "$2b$12$L2nTp2QplkTqRkQErYu.UuCQrxEpC0DEwOMwbIgQvwpSWRyAzvtN6",
+        "location": {
+            "street_number": "0",
+            "street_name": "Her Mom's House",
+            "city": "Dayton",
+            "state": "NJ",
+            "zip_code": "08810"
+        }
+    },
+    {
+        "first_name": "Esha",
+        "last_name": "VigneswaranSS",
+        "phone_number": "2313-456-7800",
+        "email": "eshaSSSSSSSSSSs.vigneswaran@mit.edu",
+        "password": "$2b$12$LiEJUFv1Tk/8OTX..vl2cOyHfw3735hzJATeZkmk8Ek6e5ICs9Wra",
+        "location": {
+            "street_number": "0",
+            "street_name": "Her Mom's House",
+            "city": "Dayton",
+            "state": "NJ",
+            "zip_code": "08810"
+        }
+    },
+    {
+        "first_name": "Esha",
+        "last_name": "VigneswaranSS",
+        "phone_number": "2313-456-7802",
+        "email": "eshaSSSSSSSSSSSs.vigneswaran@mit.edu",
+        "password": "$2b$12$hzIRQtvW3hfn9YlAyz4s4eIWoszDB8euA1t61vUlkA7PGGqRhm1Ai",
+        "location": {
+            "street_number": "0",
+            "street_name": "Her Mom's House",
+            "city": "Dayton",
+            "state": "NJ",
+            "zip_code": "08810"
         }
     }
 ]
