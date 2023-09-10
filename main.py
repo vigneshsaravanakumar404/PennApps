@@ -8,8 +8,6 @@ computer_nav = Html("""
         <div id="navlinks">
             <p id="dashboardnav" class="navlink">Dashboard</p>
             <img class="navlinkicon" src="./icons/dashboard.png" id="dashboardicon"></img>
-            <p id="budgetingnav" class="navlink">Budgeting</p>
-            <img class="navlinkicon" src="./icons/budgeting.png" id="budgetingicon"></img>
             <p id="quiznav" class="navlink">Selector</p>
             <img class="navlinkicon" src="./icons/selector.png" id="selectoricon"></img>
             <p id="coursenav" class="navlink">Course</p>
@@ -31,9 +29,6 @@ tab_nav= Html("""
         <div id="tabnavlinks">
             <div class="navlinkiconbody" id="firstnavicon">
                 <img class="tabnavlinkicon" src="./icons/dashboard.png" id="tabdashboardicon"></img>
-            </div>
-            <div class="navlinkiconbody">
-                <img class="tabnavlinkicon" src="./icons/budgeting.png" id="tabbudgetingicon"></img>
             </div>
             <div class="navlinkiconbody">
                 <img class="tabnavlinkicon" src="./icons/selector.png" id="tabselectoricon"></img>
@@ -91,7 +86,24 @@ pages = {
 
     """),
     'blog': Html("""
-
+        <div id="bloglinks">
+            <a class="bloglink" href="https://docs.google.com/document/d/18Zeyh6zOmSa6WwuFdGvN1dmjN_5Oj68iYXyRXn98RZ0/edit#heading=h.tgpfmijzask">Strategies for Managing Your Food Expenses While in College</a>
+            <a class="bloglink" href="https://docs.google.com/document/d/12mKkWZqUA_mCkjdUQ8B6Nh6ce2Ej7iJgkgR9VCR-LEE/edit#heading=h.2tlm7cbcpb1l">A Comprehensive Guide to Transportation in College</a>
+            <a class="bloglink" href="https://docs.google.com/document/d/1Gxo02lb2NnpexArZ0t0NJ5_InoWlteb-yIqcTjg41Fo/edit#heading=h.ldk03fwuqxgc">Mastering the Art of Networking to Secure Your Dream Internship</a>
+            <a class="bloglink" href="https://docs.google.com/document/d/1S3PCqwP00-LCbzLsAEeU-jJEsAqRqjONzAhAJA2cs-M/edit#heading=h.oq30f560mkcw">Dorming in College: Your Ultimate Guide to Campus Living</a>
+            <a class="bloglink" href="https://docs.google.com/document/d/18Zeyh6zOmSa6WwuFdGvN1dmjN_5Oj68iYXyRXn98RZ0/edit#heading=h.tgpfmijzask">Strategies for Managing Your Food Expenses While in College</a>
+            <a class="bloglink" href="https://docs.google.com/document/d/12mKkWZqUA_mCkjdUQ8B6Nh6ce2Ej7iJgkgR9VCR-LEE/edit#heading=h.2tlm7cbcpb1l">A Comprehensive Guide to Transportation in College</a>
+            <a class="bloglink" href="https://docs.google.com/document/d/1Gxo02lb2NnpexArZ0t0NJ5_InoWlteb-yIqcTjg41Fo/edit#heading=h.ldk03fwuqxgc">Mastering the Art of Networking to Secure Your Dream Internship</a>
+            <a class="bloglink" href="https://docs.google.com/document/d/1S3PCqwP00-LCbzLsAEeU-jJEsAqRqjONzAhAJA2cs-M/edit#heading=h.oq30f560mkcw">Dorming in College: Your Ultimate Guide to Campus Living</a>
+            <a class="bloglink" href="https://docs.google.com/document/d/18Zeyh6zOmSa6WwuFdGvN1dmjN_5Oj68iYXyRXn98RZ0/edit#heading=h.tgpfmijzask">Strategies for Managing Your Food Expenses While in College</a>
+            <a class="bloglink" href="https://docs.google.com/document/d/12mKkWZqUA_mCkjdUQ8B6Nh6ce2Ej7iJgkgR9VCR-LEE/edit#heading=h.2tlm7cbcpb1l">A Comprehensive Guide to Transportation in College</a>
+            <a class="bloglink" href="https://docs.google.com/document/d/1Gxo02lb2NnpexArZ0t0NJ5_InoWlteb-yIqcTjg41Fo/edit#heading=h.ldk03fwuqxgc">Mastering the Art of Networking to Secure Your Dream Internship</a>
+            <a class="bloglink" href="https://docs.google.com/document/d/1S3PCqwP00-LCbzLsAEeU-jJEsAqRqjONzAhAJA2cs-M/edit#heading=h.oq30f560mkcw">Dorming in College: Your Ultimate Guide to Campus Living</a>
+            <a class="bloglink" href="https://docs.google.com/document/d/18Zeyh6zOmSa6WwuFdGvN1dmjN_5Oj68iYXyRXn98RZ0/edit#heading=h.tgpfmijzask">Strategies for Managing Your Food Expenses While in College</a>
+            <a class="bloglink" href="https://docs.google.com/document/d/12mKkWZqUA_mCkjdUQ8B6Nh6ce2Ej7iJgkgR9VCR-LEE/edit#heading=h.2tlm7cbcpb1l">A Comprehensive Guide to Transportation in College</a>
+            <a class="bloglink" href="https://docs.google.com/document/d/1Gxo02lb2NnpexArZ0t0NJ5_InoWlteb-yIqcTjg41Fo/edit#heading=h.ldk03fwuqxgc">Mastering the Art of Networking to Secure Your Dream Internship</a>
+            <a class="bloglink" href="https://docs.google.com/document/d/1S3PCqwP00-LCbzLsAEeU-jJEsAqRqjONzAhAJA2cs-M/edit#heading=h.oq30f560mkcw">Dorming in College: Your Ultimate Guide to Campus Living</a>
+        </div>
     """),
     'signup': Html("""
         <div id="signupbody">
@@ -136,6 +148,7 @@ pages = {
                 <img class="loginicon" src="./icons/password.png"></img>
                 <input class="logininput" type="password" name="password" placeholder="Password"></input><br></br><br></br>
                 <input id="loginsubmit" type="submit" value="Submit"></input>
+                <p id="loginsubmit">Sign Up</p>
             </form>
         </div>
         <div style="height: 200px;"></div>
@@ -146,5 +159,3 @@ pages = {
 }
 
 Gui(pages=pages, css_file='./styles.css').run(dark_mode=True)
-
-# first name, last name, street name, street number, password, confirm password, state, city, zip code, phone number, email

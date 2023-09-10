@@ -35,7 +35,7 @@ body {
 }
 
 #navlinks {
-    margin-left: calc(100vw - 1010px);
+    margin-left: calc(100vw - 850px);
     position: relative;
     bottom: 75px;
 }
@@ -153,7 +153,7 @@ h1 {
 }
 
 #tabnavlinks {
-    margin-left: calc(50vw - 150px);
+    margin-left: calc(50vw - 120px);
     position: relative;
     bottom: 25px;
 }
@@ -276,4 +276,23 @@ h1 {
 #loginsubmit:hover {
     background-color: rgba(100, 240, 120, 0.3);
     cursor: pointer;
+}
+
+#bloglinks {
+    width: 80vw;
+    text-align: center;
+    margin-left: 10vw;
+    margin-top: 100px;
+}
+
+.bloglink {
+    color: rgba(100, 240, 120, 0.1);
+    transition: color 0.25s;
+    text-decoration: none;
+    display: block;
+}
+
+.bloglink:hover {
+    cursor: pointer;
+    color: rgba(100, 240, 120, 0.3)
 }
