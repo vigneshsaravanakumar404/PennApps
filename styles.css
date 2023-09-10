@@ -296,3 +296,55 @@ h1 {
     cursor: pointer;
     color: rgba(100, 240, 120, 0.3)
 }
+
+.coursesubtitle {
+    color: rgba(100, 240, 120, 0.5);
+    display: block;
+    margin-top: 20px;
+}
+
+#dashboardtitle {
+    margin-top: 100px;
+    margin-left: 25px;
+}
+
+#dashboardprogresstitle {
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+.progressbar {
+    width: calc(100vw - 100px);
+    height: 40px;
+    margin-left: 25px;
+    margin-top: 10px;
+    background-color: rgb(5, 5, 30);
+}
+
+.progress {
+    height: 40px;
+    background-color: rgba(100, 240, 120, 0.5);
+}
+
+#p1 {
+    width: calc(67vw - 100px);
+}
+
+#p2 {
+    width: calc(100vw - 100px);
+}
+
+#p3 {
+    width: calc(100vw - 100px);
+    background-color: rgba(240, 100, 100, 0.5);
+}
+
+#p4 {
+    width: calc(50vw - 100px);
+}
+
+#p5 {
+    width: calc(88vw - 100px);
+    background-color: rgba(219, 240, 100, 0.5);
+}
+
