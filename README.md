@@ -1,5 +1,6 @@
 
 # brokeMeNot
+
 ![Logo](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/581/627/datas/gallery.jpg)
 
 BrokeMeNot.us is a web application conceived by visionary high school seniors eager to simplify the financial maze of college. Designed as a comprehensive platform, it offers students the ability to connect or establish a Capital One account, monitor transactions, and manage their budgets effectively. Beyond mere financial tracking, the platform educates users with financial literacy articles and blogs, and aids in finding the most suitable student loans. Built with the innovative Taipy framework and enriched with APIs like Twilio and Capital One, it promises an elegant user experience. As the creators look ahead, they envision integrating AI-driven chatbots and personalized financial recommendations, making it an indispensable tool for college-bound students.
@@ -41,24 +42,31 @@ BrokeMeNot.us is a web application conceived by visionary high school seniors ea
 ## Screenshots
 
 ### Logo
+
 ![Logo](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/581/627/datas/gallery.jpg)
 
 ### Home
+
 ![Home Screen](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/581/633/datas/gallery.jpg)
 
 ### Gallery
+
 ![Gallery](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/581/631/datas/gallery.jpg)
 
 ### Modifying
+
 ![Modifying](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/581/629/datas/gallery.jpg)
 
 ### Course
+
 ![Course](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/581/630/datas/gallery.jpg)
 
 ### Form
+
 ![Form](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/581/632/datas/gallery.jpg)
 
 ### Info
+
 ![Info](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/581/628/datas/gallery.jpg)
 
 
