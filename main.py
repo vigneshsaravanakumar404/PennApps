@@ -36,7 +36,6 @@ from taipy.gui import Html
 # print(result)
 
 
-
 computer_nav = Html("""
     <div class="navbar">
         <div id="navicon"></div>
@@ -119,6 +118,28 @@ pages = {
 
     """),
     'course': Html("""
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vSKXvbB4EvHT3IMbL0hnLKyZ6miusLs9CwsKHvl2KQMek9HKdyXZ8vF14H27jqrxKSywTnAtTi73ORv/pub?embedded=true" style="height: 400px; width: 50vw; margin-left: 25vw; margin-top: 50px;"></iframe>
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vTFlNEuloGoT21ey_h0M5TriNYtXjrf_HMp1HUqeXILm-BcxLY7WU1QjKlOQM2WUeNrxjYkDi9pkOrv/pub?embedded=true" style="height: 400px; width: 50vw; margin-left: 25vw; margin-top: 100px;"></iframe>
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vT5PGN062vpaQbHiNu18FNH3Vy9q4kYAKXWjzwNtV7lsgalgTlr42HTHheKlqqdOjwz_ypQvWYPCGIs/pub?embedded=true" style="height: 400px; width: 50vw; margin-left: 25vw; margin-top: 150px;"></iframe>
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vR5hygFdcwjsX0Y4i2deezgC4Lp-2JPWF5TISvk_73Wn5QuDqReIRo1-R-jyw4X01IYu4dl2DJwJIS-/pub?embedded=true" style="height: 400px; width: 50vw; margin-left: 25vw; margin-top: 200px;"></iframe>
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vS67PmNWjK-84zRSlcAgvGofNaoiK3gQyVxVN2eYizfpH2heP5UUHhwDI57DMEI_Qm6KEuNwN8VR2vi/pub?embedded=true" style="height: 400px; width: 50vw; margin-left: 25vw; margin-top: 250px;"></iframe>
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vR28NF5swtyPZqEqJ_96z9dI5B3aL7UvzpkssDs3ILXZtwjS6IHRdEco69tjetI52UHJB9wVLxzSwH6/pub?embedded=true" style="height: 400px; width: 50vw; margin-left: 25vw; margin-top: 300px;"></iframe>
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vTcc1nErKBhTulPM-ZkGRaUiqgdIcTGTsmVx3PxpfyAlK20tTWvOraje50Z1kbuGwR1uqR6eN11YNwj/pub?embedded=true" style="height: 400px; width: 50vw; margin-left: 25vw; margin-top: 350px;"></iframe>
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vQs5ql01ze7ZkKLrVA3OYzLuxMgjxmgPdOOzX9pbeaAfYYRY9L6CA4khTDgIeNY_nCObsNKCzFnru3v/pub?embedded=true" style="height: 400px; width: 50vw; margin-left: 25vw; margin-top: 400px;"></iframe>
+        
+                   
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vQOSs6A-kUWQhhgA-Xok-4UpotVr0xtHv5PXlsTI85g8Z_3o2iCJLDNpdgs6SwZRV2WudeunKxtd1x_/pub?embedded=true" style="height: 400px; width: 50vw; margin-left: 25vw; margin-top: 450px;"></iframe>
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vQPrYwzOSQTtMinZnCx3OeWPA3Klr_OLwRc9UZrJgG55EA1DGswKvql4z-AV3hESOT4LhbLCDpWjl9d/pub?embedded=true" style="height: 400px; width: 50vw; margin-left: 25vw; margin-top: 500px;"></iframe>
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vRvz-XeE2mFzbKWtIS9nGUKhLpV4lv5GsK8L7ymFN-xEoCe5Xm54PRo_QjmnFh9BnzHoGFSCwW6IK60/pub?embedded=true" style="height: 400px; width: 50vw; margin-left: 25vw; margin-top: 550px;"></iframe>
+        
+
+
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vQQFV5wUigZ_8x9zSOXx2uWIKfsviMCMWgcglXZzL9WJWaUZPZi_82XNcr5cmU-r0zzZIfp9Y287Yzg/pub?embedded=true" style="height: 400px; width: 50vw; margin-left: 25vw; margin-top: 600px;"></iframe>
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vRGZa_85uW-9RDvkawjXUoV6BE5qNWgpn0J_KP2JasCxpefXaYjF2V--5rzNv-mbTh4SCBmwIoeYqpT/pub?embedded=true" style="height: 400px; width: 50vw; margin-left: 25vw; margin-top: 650px;"></iframe>
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vS969XJI9AGI1FkNa6zxRzeqQb_d0mOIDdIkQPN5dkOl_6mWBVGbz_Z9lbcUKM7aIbK23-MfEvG02PI/pub?embedded=true" style="height: 400px; width: 50vw; margin-left: 25vw; margin-top: 700px;"></iframe>
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vTZobbU0bPFcXXG7ox3x7gbb_7bzNjU55x-znWCQY90T55ecUrNsZ4F3okKDKPkLHVB68rQWyfzK8jw/pub?embedded=true" style="height: 400px; width: 50vw; margin-left: 25vw; margin-top: 750px;"></iframe>
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vTZ7F1aYi_2aCHwBBDuXasWnw2g97sJlN49GIKP4z6U3fe9pq1CgCWE2zkZmZqnyUU0PHpN4Pl2KhmA/pub?embedded=true" style="height: 400px; width: 50vw; margin-left: 25vw; margin-top: 800px;"></iframe>
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vSVWPZ7RChdq8o0JTEV42jZ4O_0QpklkdFGgI2RDUzWF0VJPWbRbo-j_-0IAjwWKcoC4Vyh3sP740g2/pub?embedded=true" style="height: 400px; width: 50vw; margin-left: 25vw; margin-top: 850px;"></iframe>
 
     """),
     'blog': Html("""
@@ -171,23 +192,26 @@ pages = {
                 <img class="loginicon" src="./icons/password.png"></img>
                 <input class="logininput" type="text" name="otp" placeholder="OTP"></input><br></br><br></br>
                 <input id="loginsubmit" type="submit" value="Submit"></input>
+
+                   
             </form>
         </div>
         <div style="height: 200px;"></div>
     """),
     'login': Html("""
         <div id="loginbody">
-            <h2 id="logintitle">Log In</h2>
-            <form action="/action_page.php" style="margin-top: 15px">
-                <img class="loginicon" src="./icons/email.png"></img>
-                <input class="logininput" type="text" name="email" placeholder="Email"></input><br></br><br></br>
-                <img class="loginicon" src="./icons/password.png"></img>
-                <input class="logininput" type="password" name="password" placeholder="Password"></input><br></br><br></br>
-                <input id="loginsubmit" type="submit" value="Submit"></input>
-                <p id="loginsubmit">Sign Up</p>
-            </form>
+        <h2 id="logintitle">Log In</h2>
+        <form action="/action_page.php" style="margin-top: 15px">
+            <img class="loginicon" src="./icons/email.png"></img>
+            <input class="logininput" type="text" name="email" placeholder="Email"></input><br></br><br></br>
+            <img class="loginicon" src="./icons/password.png"></img>
+            <input class="logininput" type="password" name="password" placeholder="Password"></input><br></br><br></br>
+            <input id="loginsubmit" type="submit" value="Submit"></input>
+            <p id="loginsubmit">Sign Up</p>
+        </form>
         </div>
         <div style="height: 200px;"></div>
+
     """),
     'account': Html("""
 
@@ -195,3 +219,5 @@ pages = {
 }
 
 Gui(pages=pages, css_file='./styles.css').run(dark_mode=True)
+
+# get variables from text inputs
