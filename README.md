@@ -1,5 +1,8 @@
-
 # brokeMeNot
+
+## Winner at PennApps
+Won the best hack using Taipy's Python web development framework at the University of Pennsylvania's Penn Apps. A colligate level, invite-only hackathon with a sub 30% acceptance. rate.  
+
 
 ![Logo](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/581/627/datas/gallery.jpg)
 
